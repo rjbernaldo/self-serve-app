@@ -6,6 +6,7 @@ export default ({ ct, selectTask }) => {
     { name: 'LEGAL_ENTITY_SUPPORT', display_name: 'Legal Entity Support' },
     { name: 'ACCOUNT_SUPPORT', display_name: 'Account Support' },
     { name: 'MARKETPLACE_SUPPORT', display_name: 'Marketplace Support' },
+    { name: 'FEE_SUPPORT', display_name: 'Fee Support' },
   ];
   return (
     <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">

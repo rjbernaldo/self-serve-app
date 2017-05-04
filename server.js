@@ -29,7 +29,8 @@ app.use([
     '/api/legal_entities',
     '/api/transactions',
     '/api/batch_transactions',
-    '/api/marketplaces'
+    '/api/marketplaces',
+    '/api/fees'
   ], (req, res) => {
   let opts = {
     url: process.env.URL + req.originalUrl.replace('api/', ''),

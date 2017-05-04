@@ -4,12 +4,14 @@ import ItemSupport from './ItemSupport/index'
 import AccountSupport from './AccountSupport/index'
 import LegalEntitySupport from './LegalEntitySupport/index'
 import MarketplaceSupport from './MarketplaceSupport/index'
+import FeeSupport from './FeeSupport/index'
 
 const TASKS = {
   'ITEM_SUPPORT': ItemSupport,
   'ACCOUNT_SUPPORT': AccountSupport,
   'LEGAL_ENTITY_SUPPORT': LegalEntitySupport,
   'MARKETPLACE_SUPPORT': MarketplaceSupport,
+  'FEE_SUPPORT': FeeSupport,
 }
 
 export default (props) => {

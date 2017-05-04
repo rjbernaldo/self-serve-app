@@ -151,6 +151,22 @@ export function fetchLegalEntity(uuid) {
   }
 }
 
+export function fetchFees() {
+  return function(dispatch) {
+    fetch(`/api/fees/`)
+      .then(r1 => r1.json())
+      .then(r1 => {
+        if (r1.errors) {
+          dispatch(displayError(JSON.stringify(r1.errors)));
+        } else {
+          let fees = r1.fees;
+          let feesData = { fees }
+          dispatch(updateTaskData(feesData))
+        }
+      });
+  }
+}
+
 export function fetchMarketplace(uuid) {
   return function(dispatch) {
     fetch(`/api/marketplaces/${uuid}`)
